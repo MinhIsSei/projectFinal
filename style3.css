@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
 * {
   font-family: "Roboto";
@@ -127,7 +128,6 @@ html {
 
 .harry {
   justify-content: center;
-
   width: 250px;
 }
 .ron {
@@ -138,32 +138,36 @@ html {
   width: 150px;
 }
 
-.image {
-  width:100%;
+.content-page2 {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 70px;
 }
+
 .harryContent {
-  width:500px;
+  width: 600px;
   height: 500px;
-  background-color:gray;
-  color:black;
-  display:none;
+  background-color: #24252a;
+  color: white;
+  display: none;
   word-wrap: break-word;
   border-radius: 15px;
-  text-align: center;
+  text-align: left;
+  font-family: 'New Tegomin', serif;
+  font-size: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 
-
-.image:hover  + .harryContent {
-    display:block;
-    display:flex;
-    margin-left: 1200px;
-    margin-top: -300px;
-
+.content-page2:hover + .harryContent {
+  display: block;
+  display: flex;
+  margin-left: 1200px;
+  margin-top: -300px;
 }
 
 .prev,
