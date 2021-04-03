@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 
 * {
   font-family: "Roboto";
@@ -91,10 +91,12 @@ a {
 .page2 {
   width: 100%;
   height: 100%;
-  background-image: url("1.jpeg");
+  background-image: url("hogwartsatnight2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .back-to-top {
@@ -129,13 +131,16 @@ html {
 .harry {
   justify-content: center;
   width: 250px;
+  margin-left: -350px;
 }
 .ron {
   width: 135px;
+  margin-left: -300px;
 }
 
 .hermione {
   width: 150px;
+  margin-left: -300px;
 }
 
 .content-page2 {
@@ -147,27 +152,26 @@ html {
 }
 
 .harryContent {
-  width: 600px;
-  height: 500px;
+  width: 550px;
+  height: 450px;
   background-color: #24252a;
   color: white;
   display: none;
   word-wrap: break-word;
   border-radius: 15px;
   text-align: left;
-  font-family: 'New Tegomin', serif;
-  font-size: 18px;
+  font-family: "New Tegomin", serif;
+  font-size: 16px;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 10px;
 }
 
-
 .content-page2:hover + .harryContent {
   display: block;
   display: flex;
-  margin-left: 1200px;
-  margin-top: -300px;
+  margin-left: 600px;
+  margin-top: -350px;
 }
 
 .prev,
@@ -177,5 +181,22 @@ html {
   font-size: 50px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  /* user-select: none; */
+  user-select: none;
 }
+
+/* .figure {
+  position: relative;
+}
+.figure img.harry2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.figure:hover img.harry2 {
+  opacity: 1;
+} */
