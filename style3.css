@@ -25,7 +25,7 @@ html {
 }
 
 h1 {
-  color: #2b2e4a;
+  color: #868cbc;
   font-size: 100px;
   font-family: "Redressed", cursive;
   padding-top: 150px;
@@ -75,8 +75,7 @@ button {
   cursor: url("cheese.png"), auto;
 }
 
-body,
-a {
+body {
   cursor: url(https://vignette.wikia.nocookie.net/harrypottervn/images/4/4c/Cursor.png/revision/latest?cb=20160624001041&path-prefix=vi),
     auto;
 }
@@ -114,7 +113,7 @@ a {
   left: 50%;
   bottom: 20px;
   margin-left: -25px;
-  cursor: pointer;
+
   visibility: hidden;
   opacity: 0;
 }
@@ -130,16 +129,16 @@ html {
 
 .harry {
   justify-content: center;
-  width: 250px;
+  width: 280px;
   margin-left: -350px;
 }
 .ron {
-  width: 135px;
+  width: 150px;
   margin-left: -300px;
 }
 
 .hermione {
-  width: 150px;
+  width: 165px;
   margin-left: -300px;
 }
 
@@ -151,12 +150,38 @@ html {
   margin-top: 70px;
 }
 
+.mySlides {
+  display: flex;
+  padding-left: 545px;
+}
+
 .harryContent {
   width: 550px;
-  height: 450px;
-  background-color: #24252a;
-  color: white;
-  display: none;
+  height: 480px;
+  background-color: #00203f;
+  color: #adf0d1;
+  visibility: hidden;
+  word-wrap: break-word;
+  border-radius: 15px;
+  text-align: left;
+  font-family: "New Tegomin", serif;
+  font-size: 17px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: -410px;
+}
+
+.harry:hover + .harryContent {
+  visibility: visible;
+}
+
+.ronContent {
+  width: 550px;
+  height: 480px;
+  background-color: #00203f;
+  color: #adf0d1;
+  visibility: hidden;
   word-wrap: break-word;
   border-radius: 15px;
   text-align: left;
@@ -165,13 +190,32 @@ html {
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 10px;
+  margin-top: -410px;
 }
 
-.content-page2:hover + .harryContent {
-  display: block;
-  display: flex;
-  margin-left: 600px;
-  margin-top: -350px;
+.ron:hover + .ronContent {
+  visibility: visible;
+}
+
+.hermioneContent {
+  width: 550px;
+  height: 515px;
+  background-color: #00203f;
+  color: #adf0d1;
+  visibility: hidden;
+  word-wrap: break-word;
+  border-radius: 15px;
+  text-align: left;
+  font-family: "New Tegomin", serif;
+  font-size: 17px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: -410px;
+}
+
+.hermione:hover + .hermioneContent {
+  visibility: visible;
 }
 
 .prev,

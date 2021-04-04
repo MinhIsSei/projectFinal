@@ -1,13 +1,17 @@
+let lake = document.getElementById("lake");
+let thunder = document.getElementById("thunder");
+lake.muted = false;
+thunder.muted = true;
+
 $(document).ready(function () {
   $(window).scroll(function (event) {
     var pos_body = $("html,body").scrollTop();
     console.log(pos_body);
-    if (pos_body > 100) {
-      $(".page1").addClass(".back-to-top.hien-ra");
-    } else {
-      $(".page1").removeClass(".back-to-top.hien-ra");
-    }
+    lake.muted = false;
+    thunder.muted = true;
     if (pos_body > 550) {
+      lake.muted = true;
+      thunder.muted = false;
       $(".back-to-top").addClass("hien-ra");
     } else {
       $(".back-to-top").removeClass("hien-ra");
@@ -44,7 +48,7 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = "block";
 }
-  
+
 // document.addEventListener('play', function(e){
 //   var audios = document.getElementsByTagName('audio');
 //   for(var i = 0, len = audios.length; i < len;i++){
