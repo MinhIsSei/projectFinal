@@ -1,17 +1,30 @@
 let lake = document.getElementById("lake");
 let thunder = document.getElementById("thunder");
+let theme = document.getElementById("theme");
 lake.muted = false;
 thunder.muted = true;
+theme.muted = true;
 
 $(document).ready(function () {
   $(window).scroll(function (event) {
     var pos_body = $("html,body").scrollTop();
     console.log(pos_body);
-    lake.muted = false;
-    thunder.muted = true;
     if (pos_body > 550) {
       lake.muted = true;
       thunder.muted = false;
+      theme.muted = true;
+    } else {
+      lake.muted = false;
+      thunder.muted = true;
+      theme.muted = true;
+    }
+
+    if (pos_body > 800) {
+      lake.muted = true;
+      thunder.muted = true;
+      theme.muted = false;
+    }
+    if (pos_body > 800) {
       $(".back-to-top").addClass("hien-ra");
     } else {
       $(".back-to-top").removeClass("hien-ra");
