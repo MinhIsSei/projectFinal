@@ -69,10 +69,8 @@ li a {
 
 li a:hover {
   color: #e84545;
-}
-
-button {
-  cursor: url("cheese.png"), auto;
+  cursor: url(https://vignette.wikia.nocookie.net/harrypottervn/images/4/4c/Cursor.png/revision/latest?cb=20160624001041&path-prefix=vi),
+    auto;
 }
 
 body {
@@ -111,7 +109,6 @@ body {
   left: 50%;
   bottom: 20px;
   margin-left: -25px;
-
   visibility: hidden;
   opacity: 0;
 }
@@ -242,3 +239,58 @@ html {
 .figure:hover img.harry2 {
   opacity: 1;
 } */
+
+/* .hover14 figure {
+  position: relative;
+}
+.hover14 figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.hover14 figure:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+} */
+
+footer {
+  position: absolute;
+  z-index: 1000;
+  bottom: 8px;
+  right: 16px;
+  font-size: 20px;
+  font-family: "New Tegomin", serif;
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
